@@ -27,7 +27,7 @@ vim.opt.spelllang = "en_us"
 
 -- enable auto indentation
 vim.opt.autoindent = true
--- vim.opt.smartindent = true
+vim.opt.smartindent = true
 -- vim.opt.tabstop = 2
 -- vim.opt.shiftwidth = 2
 -- vim.opt.expandtab = true
@@ -44,7 +44,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.infercase = true
 
--- vim.o.wrap = true
+vim.o.wrap = true
 
 -- u undo, U redo
 vim.api.nvim_set_keymap("n", "U", "<C-r>", { noremap = true })
