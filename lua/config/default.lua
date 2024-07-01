@@ -55,3 +55,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
 vim.keymap.set("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
+
+-- diagnostics
+vim.keymap.set("n", "<leader>of", "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "diagnostic open_float" })
+vim.keymap.set("n", "<leader>en", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { desc = "diagnostic prev" })
+vim.keymap.set("n", "<leader>ep", "<cmd>lua vim.diagnostic.goto_next()<CR>", { desc = "diagnostic next" })
